@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+ @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -516,23 +516,14 @@ body a {
 }
 
 .timeline__slides {
-  --slides-container-height: 0px; /* calcs on the fly in js */
 
-  --content-offset-x: 20px;
-  --content-offset-y: 30px;
-
-  --decoration-blur-spread: 20px;
-  --decoration-opacity: .7;
-  --decoration-pos-x: 0;
-  --decoration-pos-y: 20px;
-  --decoration-scale: 1;
 
   position: relative;
   width: 900px;
   max-width: 100%;
   margin: auto;
   height: var(--slides-container-height);
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: var(--bg-color-default);
 }
 
@@ -550,11 +541,10 @@ body a {
   width: 100%;
   height: 100%;
   content: "";
-  opacity: var(--decoration-opacity);
-  background-image: var(--gradient-default);
-  filter: blur(var(--decoration-blur-spread));
-  transform: translate3d(var(--decoration-pos-x), var( --decoration-pos-y), 0) scale(var(--decoration-scale));
   z-index: -1;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 15px;
+
 }
 
 .timeline__slide {
@@ -567,7 +557,6 @@ body a {
 }
 
 .timeline__slide.is-active {
-  transition: opacity var(--transition-duration) var(--transition-timing-function) var(--transition-delay);
   opacity: 1;
   visibility: visible;
 }
