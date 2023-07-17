@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f1f1f15a;
+  background-color: #FAF2D4;
 }
 
 header {
@@ -222,10 +222,9 @@ header .logo {
 
 .heading{
   font-size: 4em;
-  font-weight: 700;
-  color: #011D3D;
+  font-weight: 400;
+  color: #000000;
   text-align: center;
-  text-shadow:2px 2px pink;
 
 
 }
@@ -253,8 +252,8 @@ header .logo {
 
 :root {
   --color-accent-light: #00DBDE;
-  --color-accent-dark: #431eff;
-  --color-accent-vdark: rgb(71, 71, 71);
+  --color-accent-dark: #ffffff;
+  --color-accent-vdark: rgb(52, 52, 52);
   --color-secondary: #ccc;
 
   --text-color-default: #2c2c2c;
